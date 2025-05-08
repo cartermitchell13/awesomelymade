@@ -1888,7 +1888,7 @@ figcaption {
 
 .image-overlay-layer {
   z-index: 1;
-  background-color: #0000004d;
+  background-color: #0000001A;
   position: absolute;
   inset: 0%;
 }
