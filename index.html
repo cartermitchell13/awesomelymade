@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <title>Awesomely Made — A Tiny Studio Building Cool Apps</title>
-  <meta content="We’re Awesomely Made, a small team crafting simple, useful, and fun apps — built from scratch by two friends who actually love making stuff." name="description">
+  <meta content="We're Awesomely Made, a small team crafting simple, useful, and fun apps — built from scratch by two friends who actually love making stuff." name="description">
   <meta content="Awesomely Made — A Tiny Studio Building Cool Apps" property="og:title">
-  <meta content="We’re Awesomely Made, a small team crafting simple, useful, and fun apps — built from scratch by two friends who actually love making stuff." property="og:description">
+  <meta content="We're Awesomely Made, a small team crafting simple, useful, and fun apps — built from scratch by two friends who actually love making stuff." property="og:description">
   <meta content="https://cdn.prod.website-files.com/6812b0e7275aa3f9141b59f2/6812c84a00d77835319bbc85_am-og-min.png" property="og:image">
   <meta content="Awesomely Made — A Tiny Studio Building Cool Apps" property="twitter:title">
-  <meta content="We’re Awesomely Made, a small team crafting simple, useful, and fun apps — built from scratch by two friends who actually love making stuff." property="twitter:description">
+  <meta content="We're Awesomely Made, a small team crafting simple, useful, and fun apps — built from scratch by two friends who actually love making stuff." property="twitter:description">
   <meta content="https://cdn.prod.website-files.com/6812b0e7275aa3f9141b59f2/6812c84a00d77835319bbc85_am-og-min.png" property="twitter:image">
   <meta property="og:type" content="website">
   <meta content="summary_large_image" name="twitter:card">
@@ -373,10 +373,10 @@ margin: 0rem !important;
                 <div class="max-width-large align-center">
                   <div class="content7_content-wrapper">
                     <div class="margin-bottom margin-small">
-                      <h2 id="w-node-_42573387-5b17-18a4-e82a-b8da2c6617b6-141b5a5d" class="heading-style-h2">What We’re About</h2>
+                      <h2 id="w-node-_42573387-5b17-18a4-e82a-b8da2c6617b6-141b5a5d" class="heading-style-h2">What We're About</h2>
                     </div>
                     <div class="text-rich-text w-richtext">
-                      <p>At <strong>Awesomely Made</strong>, we’re just two friends who love building things. We started this little studio to chase ideas, solve problems we care about, and ship apps that feel good to use. No corporate nonsense, no layers of approval, no bloat. Just thoughtful, useful products made by people who actually use them.</p>
+                      <p>At <strong>Awesomely Made</strong>, we're just two friends who love building things. We started this little studio to chase ideas, solve problems we care about, and ship apps that feel good to use. No corporate nonsense, no layers of approval, no bloat. Just thoughtful, useful products made by people who actually use them.</p>
                       <p>We believe small teams can do big things when they care about the details. So we design, build, and launch everything ourselves, from sketches to code to app store. Every project is personal. Every decision is intentional.</p>
                       <p>Some of our ideas are playful. Some are practical. All of them are built with care. </p>
                       <p>‍<strong>Awesomely Made</strong> is our way of doing what we love and putting it in your hands.</p>
@@ -449,8 +449,10 @@ const smoother = ScrollSmoother.create({
   loadingTimeline
     .from('.header98_card', {
       opacity: 0,
+      scale: 0.5,
       y: 50,
-      duration: 1.2
+      duration: 1.2,
+      ease: 'power3.out'
     })
     .from('.text-span, .text-span-2', {
       opacity: 0,
