@@ -31,24 +31,33 @@
   -o-font-smoothing: antialiased;
 }
 </style>
-  <script>
+<style>
+  .button-text {
+    opacity: 1;
+    transition: opacity 120ms ease;
+  }
+  </style>
+<script>
   document.addEventListener("DOMContentLoaded", function () {
     const buttons = document.querySelectorAll(".button");
+
     buttons.forEach((button) => {
       const textSpan = button.querySelector(".button-text");
+
       button.addEventListener("mouseenter", () => {
         textSpan.style.opacity = 0;
         setTimeout(() => {
           textSpan.textContent = "info@awesomelymade.com";
           textSpan.style.opacity = 1;
-        }, 125);
+        }, 120);
       });
+
       button.addEventListener("mouseleave", () => {
         textSpan.style.opacity = 0;
         setTimeout(() => {
           textSpan.textContent = "Get in Touch";
           textSpan.style.opacity = 1;
-        }, 125);
+        }, 120);
       });
     });
   });
